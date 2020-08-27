@@ -1,37 +1,67 @@
 <template>
   <v-container 
-    class="grey lighten-5"
+    class="grey lighten-5 ma-0 pa-0"
     fill-height
     fluid
   >
     <v-row
-      class="blue lighten-5"
+      id="self-nav-column"
       style="height: 100%;"
       no-gutters
-      ma-0
-      pa-0
     >
       <!-- nav column -->
       <v-col
-        class="red lighten-1"
-        md="3"
+        md="2"
         align-self="center"
       >
           <!-- nav items -->
-          <v-row>
-            <span>test</span>
+          <v-row
+          class="ma-1 pa-5"
+          align="center"
+          justify="center"
+          >
+            <v-img
+              id="self-rounded-card"
+              :src="require('../assets/logo.svg')"
+              class="my-1"
+            />
           </v-row>
 
-          <v-row>
-            <span>test</span>
+          <v-row
+          class="ma-1 pa-1"
+          align="center"
+          justify="center"
+          >
+            <span
+              id="self-nav-link"
+            >
+              About
+            </span>
           </v-row>
 
-          <v-row>
-            <span>test</span>
+          <v-row
+          class="ma-1 pa-1"
+          align="center"
+          justify="center"
+          >
+            <span
+              id="self-nav-link"
+            >
+              Experience
+            </span>
           </v-row>
 
-          <v-row>
-            <span>test</span>
+          <v-row
+          id="row"
+          class="ma-1 pa-1"
+          align="center"
+          justify="center"
+          >
+            <span
+              id="self-nav-link"
+            >
+              Skills
+            </span>
           </v-row>
 
       </v-col>
@@ -40,7 +70,7 @@
       <!-- body column -->
       <v-col
         class="green lighten-1"
-        md="9"
+        md="10"
       >
       </v-col>
     </v-row>
@@ -55,3 +85,22 @@
     }),
   }
 </script>
+<style>
+#self-rounded-card {
+  border-radius: 50%; 
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  max-height: 150px;
+  max-width: 150px;
+}
+
+#self-nav-column{
+  background-color: #bd5d38;
+}
+
+#self-nav-link{
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+</style>
