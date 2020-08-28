@@ -111,6 +111,8 @@ li{
 }
 #self-content{
   background-color: blue;
+  overflow-y: scroll;
+  height: 95vh;
 }
 
 .self-resume-section{
@@ -118,6 +120,7 @@ li{
   padding-right: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  min-height: 100vh;
+  height: 100vh;
+  
 }
 </style>
