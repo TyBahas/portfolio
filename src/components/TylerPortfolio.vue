@@ -1,17 +1,19 @@
 <template>
   <v-container 
-    class="grey lighten-5 ma-0 pa-0"
+    class="ma-0 pa-0"
     fill-height
     fluid
+    id="self-nav-column"
+    
   >
     <v-row
-      id="self-nav-column"
       style="height: 100%;"
       no-gutters
     >
       <!-- nav column -->
       <v-col
         md="2"
+        id="self-nav-column"
         align-self="center"
       >
           <!-- nav items -->
@@ -26,52 +28,51 @@
               class="my-1"
             />
           </v-row>
-
           <v-row
-          class="ma-1 pa-1"
           align="center"
           justify="center"
+          id="self-nav-link"
           >
-            <span
-              id="self-nav-link"
+            <ul 
+            class="ma-1 pa-1"
+            align="center"
+            justify="center"
             >
-              About
-            </span>
+              <li class="ma-1 pa-1">About</li>
+              <li class="ma-1 pa-1">Experience</li>
+              <li class="ma-1 pa-1">Skills</li>
+            </ul>
           </v-row>
-
-          <v-row
-          class="ma-1 pa-1"
-          align="center"
-          justify="center"
-          >
-            <span
-              id="self-nav-link"
-            >
-              Experience
-            </span>
-          </v-row>
-
-          <v-row
-          id="row"
-          class="ma-1 pa-1"
-          align="center"
-          justify="center"
-          >
-            <span
-              id="self-nav-link"
-            >
-              Skills
-            </span>
-          </v-row>
-
       </v-col>
 
 
       <!-- body column -->
       <v-col
-        class="green lighten-1"
+        class="white"
         md="10"
       >
+      <div 
+      id="self-content" 
+      class="ma-4 pa-1" 
+      >
+        <section id="about"  class="self-resume-section">
+          <p>about</p>
+        </section>
+
+        <hr>
+        
+        <section id="experience" class="self-resume-section">
+          <p>experience</p>
+        </section>
+
+        <hr>
+
+        <section id="skills"  class="self-resume-section">
+          <p>skills</p>
+        </section>
+
+      </div>
+
       </v-col>
     </v-row>
   </v-container>
@@ -102,5 +103,21 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
+}
+li{
+  list-style-type: none;
+  padding-left: 0;
+  letter-spacing: 0.05rem;
+}
+#self-content{
+  background-color: blue;
+}
+
+.self-resume-section{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
 }
 </style>
