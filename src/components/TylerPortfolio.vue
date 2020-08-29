@@ -87,6 +87,10 @@
   }
 </script>
 <style>
+template{
+  overflow-y: hidden;
+}
+
 #self-rounded-card {
   border-radius: 50%; 
   border: 0.5rem solid rgba(255, 255, 255, 0.2);
